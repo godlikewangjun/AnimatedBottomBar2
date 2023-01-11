@@ -41,7 +41,7 @@ class AnimatedBottomBar @JvmOverloads constructor(
     internal val tabStyle = BottomBarStyle.Tab()
     internal val indicatorStyle = BottomBarStyle.Indicator()
 
-    private lateinit var recycler: RecyclerView
+    lateinit var recycler: RecyclerView
     private lateinit var adapter: TabAdapter
     private lateinit var tabIndicator: TabIndicator
 

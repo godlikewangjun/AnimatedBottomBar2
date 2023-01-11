@@ -28,7 +28,7 @@ import androidx.core.widget.TextViewCompat
 import nl.joery.animatedbottombar.utils.dpPx
 import nl.joery.animatedbottombar.utils.getResourceId
 
-internal class TabView @JvmOverloads constructor(
+class TabView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
