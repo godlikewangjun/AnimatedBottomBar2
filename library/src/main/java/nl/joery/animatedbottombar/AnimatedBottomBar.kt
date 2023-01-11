@@ -1077,7 +1077,7 @@ class AnimatedBottomBar @JvmOverloads constructor(
         }
 
     class Tab internal constructor(
-        val icon: Drawable,
+        val icon: Drawable?,
         var iconSize: Int = -1,
         val title: String,
         @IdRes val id: Int = -1,

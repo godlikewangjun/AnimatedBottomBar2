@@ -435,6 +435,9 @@ class TabView @JvmOverloads constructor(
 
                 animation = AlphaAnimation(valueFrom, valueTo)
             }
+            else -> {
+
+            }
         }
 
         return animation?.apply {
