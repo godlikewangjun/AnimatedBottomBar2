@@ -249,7 +249,7 @@ class AnimatedBottomBar @JvmOverloads constructor(
                 tabIndicator.setSelectedIndex(lastIndex, newIndex, animated)
 
                 viewPager?.currentItem = newIndex
-                viewPager2?.currentItem = newIndex
+                viewPager2?.setCurrentItem(newIndex,viewPager2!!.isUserInputEnabled)
 
                 onTabSelectListener?.onTabSelected(lastIndex, lastTab, newIndex, newTab)
                 onTabSelected.invoke(newTab)
