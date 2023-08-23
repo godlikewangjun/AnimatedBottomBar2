@@ -1,6 +1,7 @@
 package nl.joery.animatedbottombar
 
 import android.view.ViewGroup
+import androidx.annotation.UiThread
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.flexbox.FlexboxLayoutManager
 
@@ -114,7 +115,8 @@ internal class TabAdapter(
             selectedIndex = RecyclerView.NO_POSITION
         }
     }
-
+    @UiThread
+    @Synchronized
     fun selectTab(tab: AnimatedBottomBar.Tab, animate: Boolean) {
         val index = tabs.indexOf(tab)
         if(index >= 0) {
@@ -122,6 +124,7 @@ internal class TabAdapter(
         }
     }
 
+    @Synchronized
     fun selectTabAt(tabIndex: Int, animate: Boolean) {
         val tab = tabs[tabIndex]
         if (tabIndex == selectedIndex) {
