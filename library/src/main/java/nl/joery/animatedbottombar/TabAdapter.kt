@@ -143,6 +143,7 @@ internal class TabAdapter(
             notifyItemChanged(lastIndex, Payload(PAYLOAD_DESELECT, animate))
         }
         notifyItemChanged(tabIndex, Payload(PAYLOAD_SELECT, animate))
+//        notifyDataSetChanged()
 
         selectedTab = tab
         selectedIndex = tabIndex

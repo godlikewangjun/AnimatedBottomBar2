@@ -12,7 +12,7 @@
         android:versionCode="3"
         android:versionName="1.0.2">
         <activity
-            android:name=".bottomsheet.BottomSheetActivity">
+            android:name=".bottomsheet.BottomSheetActivity"  android:exported="true">
         </activity>
         <activity
             android:name=".playground.PlaygroundActivity"
